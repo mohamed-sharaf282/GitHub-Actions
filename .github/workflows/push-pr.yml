@@ -11,5 +11,6 @@ jobs:
 
             - name: Run test
               run: |
-                cd src/
+                pwd
+                ls -R
                 npm test
