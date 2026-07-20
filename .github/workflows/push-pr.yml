@@ -11,6 +11,5 @@ jobs:
 
             - name: Run test
               run: |
-                pwd
-                ls -R
+                cd /home/runner/work/GitHub-Actions/GitHub-Actions
                 npm test
