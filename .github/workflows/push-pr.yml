@@ -11,5 +11,4 @@ jobs:
 
             - name: Run test
               run: |
-                cd /home/runner/work/GitHub-Actions/GitHub-Actions
                 npm test
