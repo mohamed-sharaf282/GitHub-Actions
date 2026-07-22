@@ -6,7 +6,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: set api key
-        run: echo "API_KEY=12345" >> $GITHUB_ENV
-      - name: uses api key
-        run: echo "using API key $API_KEY"
+     - name: check if file exist or no
+       run: |
+         if [ -f "config.yml" ]; then
+           echo "::debug:: file exist"
+         else
+           echo "::error:: file not exist"
+         fi
